@@ -13,4 +13,4 @@ mvn clean install
 java -jar ./upvotes-0.0.1-SNAPSHOT.jar
  
 # Acessar
-http://localhost:8080/  
+http://localhost:8080/
