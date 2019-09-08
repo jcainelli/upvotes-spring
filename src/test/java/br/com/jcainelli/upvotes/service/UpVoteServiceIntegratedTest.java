@@ -46,7 +46,7 @@ public class UpVoteServiceIntegratedTest {
 
     @Test
     public void whenFindPost_ThenResultPost() throws Exception {
-        mockMvc.perform(MockMvcRequestBuilders.get("/upvote/"))
+        mockMvc.perform(MockMvcRequestBuilders.get("/rest/upvote/"))
             .andExpect(MockMvcResultMatchers.status().isOk())
             .andExpect(MockMvcResultMatchers.jsonPath("$", Matchers.hasSize(Matchers.greaterThanOrEqualTo(1))))
             .andExpect(MockMvcResultMatchers.jsonPath("$[0].id").value("10"));
